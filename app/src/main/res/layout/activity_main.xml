@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <EditText
-        android:id="@+id/InputTextTwo"
+        android:id="@+id/inputTextTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -93,5 +93,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
