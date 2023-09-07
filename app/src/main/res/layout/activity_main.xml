@@ -13,6 +13,7 @@
         android:layout_height="68dp"
         android:layout_marginStart="@dimen/buttonMarginBetween"
         android:layout_marginBottom="@dimen/bottomButtonMargin"
+        android:onClick="sub"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/AddButton" />
@@ -24,6 +25,7 @@
         android:layout_marginStart="@dimen/buttonMarginBetween"
         android:layout_marginBottom="@dimen/bottomButtonMargin"
         android:text="X"
+        android:onClick="mult"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/SubtractButton" />
 
@@ -35,6 +37,7 @@
         android:layout_marginEnd="@dimen/buttonMarginEdge"
         android:layout_marginBottom="@dimen/bottomButtonMargin"
         android:text="/"
+        android:onClick="div"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -65,8 +68,8 @@
 
     <EditText
         android:id="@+id/inputTextTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="64dp"
         android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="text"
@@ -81,11 +84,12 @@
         android:layout_marginStart="@dimen/buttonMarginEdge"
         android:layout_marginBottom="@dimen/bottomButtonMargin"
         android:text="+"
+        android:onClick="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/outputTextView"
         android:layout_width="83dp"
         android:layout_height="40dp"
         android:layout_marginBottom="156dp"
@@ -101,6 +105,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
         android:text="Calculate"
+        android:onClick="calculate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AddButton" />
 
