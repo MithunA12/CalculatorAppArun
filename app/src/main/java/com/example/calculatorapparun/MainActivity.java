@@ -1,13 +1,13 @@
 package com.example.calculatorapparun;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-
-import com.android.volley.toolbox.HttpResponse;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
+import okhttp3.*;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,11 +15,17 @@ public class MainActivity extends AppCompatActivity {
     boolean isSub;
     boolean isMult;
     boolean isDiv;
-//    HttpResponse<String> response;
+    String question;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void switchScreens(View v){
+        Intent intent = new Intent(this, WordProblemActivity.class);
+        startActivity(intent);
     }
 
     public void calculate(View v){
