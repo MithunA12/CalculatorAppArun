@@ -22,8 +22,9 @@ public class WordProblemActivity extends AppCompatActivity {
 
     }
 
+    //Some code for the requestbody using HTTPok from RapidAPIHub
     public void sendApiRequest(View v) throws Exception {
-        EditText questionET = findViewById(R.id.inputTextOne);
+        EditText questionET = findViewById(R.id.wordProblemEditText);
         question = questionET.getText().toString();
 
         OkHttpClient client = new OkHttpClient();
@@ -50,13 +51,13 @@ public class WordProblemActivity extends AppCompatActivity {
                 .build();
 
         Response response = client.newCall(request).execute();
-
+        String output = response.body().toString();
         if (!response.isSuccessful()) {
-            throw new IOException("Unexpected code " + response);
+            throw new IOException("Unexpected code " + output);
         }
 
         TextView infoTVOutput = findViewById(R.id.outputWordProblemTextView);
-        infoTVOutput.setText(response.body().string());
+        infoTVOutput.setText(output);
 
     }
 }
