@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CalculatorAppArun</string>
+    <string name="titleText">Calculator</string>
+    <string name="clearText">Clear</string>
 </resources>

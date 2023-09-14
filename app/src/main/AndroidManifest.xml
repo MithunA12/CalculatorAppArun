@@ -21,11 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WordProblemActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="Enter Word Problem"
-            android:exported="false">
-        </activity>
 
     </application>
 

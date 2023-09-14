@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textViewPadding">10dp</dimen>
-    <dimen name="bottomButtonMargin">328dp</dimen>
     <dimen name="buttonMarginBetween">25dp</dimen>
-    <dimen name="buttonMarginEdge">30dp</dimen>
+    <dimen name="buttonMarginBottom">40dp</dimen>
     <dimen name="titleTextSize">24sp</dimen>
     <dimen name="regTextSize">25sp</dimen>
+    <dimen name = "buttonSize">80dp</dimen>
+    <dimen name="paddingLeft">10dp</dimen>
 </resources>
